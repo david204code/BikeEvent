@@ -1,15 +1,45 @@
 <style>
+  ul {
+    padding: 2%;
+    text-align: center;
+  }
 
+  li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .header {
+    font-size: 2.0rem;
+    font-weight: 300;
+    background-color: black;
+  }
 </style>
 
 
 <div class="header">
-  <%= link_to "Home", home_path %>
-  <%= link_to "Photo", photo_path %>
-  <%= link_to "Location", location_path %>
-  <%= link_to "Riders", riders_path %>
-  <%= link_to "Contest", contest_path %>
+  <nav class="">
+    <ul class="">
+      <li class="">
+        <%= link_to "Home", home_path %>
+      </li>
+      <li class="">
+        <%= link_to "Photo", photo_path %>
+      </li>
+      <li class="">
+        <%= link_to "Location", location_path %>
+      </li>
+      <li class="">
+        <%= link_to "Riders", riders_path %>
+      </li>
+      <li class="">
+        <%= link_to "Contest", contest_path %>
+      </li> 
+    </ul>
+  </nav>
 </div>
+
 
 <!-- <div class="header">
   <a href="/home">Home</a>
@@ -17,4 +47,4 @@
   <a href="/location">Location</a>
   <a href="/riders">Riders</a>
   <a href="/contest">Contest</a>
-</div> -->
+</div>  -->
