@@ -11,17 +11,62 @@
     </div>
   <% end %>
   
-  <div class="card">
-    <h1 class="text-center">
-      Submit Your Slogan
-    </h1>
-    <p>
-    Please fill in this form to enter the contest  
-    </p>
-    <div class="actions text-center">
-      <%= form.submit "Submit"%>
+
+  <div class="row">
+    <div class="col-md-8 card">
+      <div class="text-center">
+        <h1 class="">
+          Submit Your Slogan
+        </h1>
+        <p class="">
+          Please fill in this form to enter the contest  
+        </p>
+      </div>
+
+      <div class="row form-group">    
+        <div class="col-md-6">
+          <%= form.label :firstname %>
+          <%= form.text_field :firstname, placeholder:"first name", class: "form-control"%>
+        </div>
+
+        <div class="col-md-6">
+          <%= form.label :lastname %>
+          <%= form.text_field :lastname, placeholder:"last name", class: "form-control"%>
+        </div>
+      </div>
+
+      <div class="row offset-1">
+        <div class="col-md-10 form-group text-center">
+          <%= form.label :email %>
+          <%= form.text_field :email, placeholder:"email address", class: "form-control"%> 
+        </div>
+      </div>
+      
+      <div class="row offset-1">
+        <div class="col-md-10 form-group text-center">
+          <%= form.label :"confirm email" %>
+          <%= form.text_field :email, placeholder:"email address", class: "form-control"%> 
+        </div>
+      </div>
+      
+      <div class="row offset-1 form-group">
+        <div class="col-md-10 text-center">
+          <%= form.label :slogan %>
+          <%= form.text_area :slogan, placeholder:"Enter your slogan here!", class:"form-control", rows:"4" %>
+        </div>
+      </div>
+
+      <div class="actions text-center">
+        <%= form.submit "Submit"%>
+      </div>
     </div>
+
+    <div class="col-md-4">
+
+    </div>
+
   </div>
+
 
 
 <% end %>
