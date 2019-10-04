@@ -1,12 +1,12 @@
 <style>
     ul {
-      padding: 1%;
+      /* padding: 1%; */
       text-align: center;
     }
   
     li {
       display: inline;
-      padding: 10px;
+      padding: 40px;
       margin: 10px;
     }
   
@@ -16,6 +16,14 @@
       background-color: black;
       color: white;
     }
+
+    .menu {
+      margin-top: 25px;
+    }
+
+    .logo {
+      margin-left: -76px;
+    }
   </style>
   
   
@@ -23,11 +31,11 @@
     <nav class="">
       <ul class="">
         <div class="row">
-          <div class="col-md-2">
-            <%= image_tag ("bike-icon.png"), style:"height:100px" %>
+          <div class="col-md-2 logo">
+              <%= image_tag ("bike-icon.png"), style:"height:100px" %>
           </div>
 
-          <div class="col-md-10">
+          <div class="col-md-10 menu">
             <li class="">  
               <%= link_to "Home", home_path %>
             </li>
@@ -48,7 +56,7 @@
       </ul>
     </nav>
   </div>
-  <%= image_tag ("bike-icon.png"), style:"height:105px" %>
+  <!-- <%= image_tag ("bike-icon.png"), style:"height:105px" %> -->
   
   <!-- <div class="header">
     <a href="/home">Home</a>
