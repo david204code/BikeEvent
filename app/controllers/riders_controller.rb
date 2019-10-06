@@ -69,6 +69,6 @@ class RidersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rider_params
-      params.fetch(:rider, {})
+      params.fetch(:rider, {}).permit(:firstname, :lastname, :city_of_origin, :state_of_origin, :latitude, :longitude)
     end
 end
