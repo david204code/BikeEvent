@@ -11,7 +11,35 @@
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= form.submit %>
+
+  <div> 
+    <div>
+      <%= form.label :firstname %>
+      <%= form.text_field :firstname %>
+
+      <%= form.label :lastname %>
+      <%= form.text_field :lastname %>
+    </div>
+
+    <div>
+      <%= form.label :city_of_origin %>
+      <%= form.text_field :city_of_origin %>
+
+      <%= form.label :state_of_origin %>
+      <%= form.text_field :state_of_origin %>
+    </div>
+
+    <div>
+      <%= form.label :latitude %>
+      <%= form.text_field :latitude %>
+
+      <%= form.label :longitude %>
+      <%= form.text_field :longitude %>
+    </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+
   </div>
+  
 <% end %>
