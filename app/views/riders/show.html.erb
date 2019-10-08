@@ -1,4 +1,14 @@
 <p id="notice"><%= notice %></p>
 
+
+
+  <tr>
+    <td><p><%= @rider.firstname %></p></td>
+    <td><p><%= @rider.lastname %></p></td>
+    <td><p><%= @rider.city_of_origin %></p></td>
+    <td><%= link_to 'Show', @rider %></td>    
+  </tr>
+
+
 <%= link_to 'Edit', edit_rider_path(@rider) %> |
 <%= link_to 'Back', riders_path %>

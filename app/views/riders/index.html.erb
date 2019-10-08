@@ -5,20 +5,59 @@
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th class="col-md-3">Rider's firstname</th>
+      <th class="col-md-3">Rider's lastname</th>
+      <th class="col-md-3">City of Origin</th>
     </tr>
   </thead>
 
   <tbody>
     <% @riders.each do |rider| %>
       <tr>
-        <td><%= link_to 'Show', rider %></td>
-        <td><%= link_to 'Edit', edit_rider_path(rider) %></td>
-        <td><%= link_to 'Destroy', rider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><p><%= rider.firstname %></p></td>
+          <td><p><%= rider.lastname %></p></td>
+          <td><p><%= rider.city_of_origin %></p></td>
+          <td><%= link_to 'Show', rider %></td>
+          <td><%= link_to 'Edit', edit_rider_path(rider) %></td>
+          <td><%= button_to 'Destroy', rider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<h1 class="text-center">
+  Riders
+</h1>
+
+<div class="shadow col-md-10 mx-auto text-center">
+  <table class="table">
+    <thead class>
+      <tr>
+        <th class="col-md-2">First Name</th>
+        <th class="col-md-2">Second Name</th>
+        <th class="col-md-2">City of origin</th>        
+      </tr>
+    </thead>
+
+    <tbody>
+      
+      <% @riders.each do |rider| %>
+        <tr class="">
+          <a href="">Click here
+            <td><%= rider.firstname %></td>
+            <td><%= rider.lastname %></td>
+            <td><%= rider.city_of_origin %></td>
+          </a>
+        </tr>
+      <% end %>
+    </tbody>
+
+    
+  </table>
+
+</div>
+
+
 
 <br>
 
